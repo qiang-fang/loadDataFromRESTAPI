@@ -3,6 +3,7 @@
 execute the following command to add the item in the crontab jobs
 
 crontab -e
+
 00 09 * * * /src/load_data/load_data.py >> /log/load_data.log 2>&1
 
 ### 2. Something can be optimized
