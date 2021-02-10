@@ -12,7 +12,6 @@ class LoadData:
         self.county_url = '$query=select distinct county order by county'
         self.data_url = '$query=select test_date,new_positives,cumulative_number_of_positives,' \
                         'total_number_of_tests,cumulative_number_of_tests where county='
-        self.db_uri = 'file:test_database?mode=memory&cache=shared'
         self.conn = connection
         self.county_list = []
         self.MAX_WORKERS = 15
